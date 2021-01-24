@@ -1,5 +1,3 @@
-# Yoyo-AI-pizzaBot
-
 # VIDEO DEMONSTRATION OF THE CHATBOT.
 ![Video-Demonstration-of-the-Worki](https://user-images.githubusercontent.com/32811341/105641064-23055200-5ea8-11eb-8a54-a6d1d5235c1a.gif)
 
@@ -26,3 +24,6 @@
 
 
 # Now the BOT can Successfully Interact with its Backend.
+
+# Architecture of the ChatBot
+![Screenshot (228)](https://user-images.githubusercontent.com/32811341/105641149-94dd9b80-5ea8-11eb-81f7-4c0d55023ce6.png)
