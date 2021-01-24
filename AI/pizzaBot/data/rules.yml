@@ -1,0 +1,38 @@
+
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: out_of_scope
+  steps:
+  - intent: nlu-fallback
+  - action: utter_out_of_scope
+
+
+# - rule: Activate form
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - action: utter_veg_non_veg
+#   - intent: vegetarian
+#   - action: utter_veg
+#   - action: form_info_pizza
+#   - active_loop: form_info_pizza
+
+# - rule: Submit form
+  # condition:
+  # # Condition that form is active.
+  # - active_loop: form_info_pizza
+  # steps:
+  # # Form is deactivated
+  # - action: form_info_pizza
+  # - active_loop: null
+  # - slot_was_set:
+  #   - requested_slot: null
+  # # The actions we want to run when the form is submitted.
+  # - action: action_submit

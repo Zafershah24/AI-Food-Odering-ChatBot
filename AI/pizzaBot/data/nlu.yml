@@ -1,0 +1,256 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hola
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - adios
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - cya
+- intent: what_you_have
+  examples: |
+    - what can i get here?
+    - what can i have to eat?
+    - what can i get for the lunch?
+    - what can i get for the dinner?
+    - i want food
+    - i want pizza
+    - do you have food?
+    - can i get food here?
+
+- intent: vegetarian
+  examples: |
+    - vegetarian pizza
+    - veg pizza
+    - vegetarian pizza
+    - pure veggie
+    - i want vegetarian pizza
+- intent: nonvegetarian
+  examples: |
+    - non vegetarian
+    - non veg pizza
+    - non veg pizza
+    - i want non vegetarian pizza
+- intent: side
+  examples: |
+    - Side Dishes
+    - side
+    - side dish
+    - Show me Side Dishes
+    - i want Side Foods
+
+- intent: food
+  examples: |
+    - I want to order [Chicken](food) pizza
+    - [Peri Peri](food) pizza
+    - We like to have [peri peri](food) pizza
+    - I want [Chicken Pizza](food) pizza
+    - [chicken](food) pizza please.
+    - I love [bacon](food) pizza.
+    - I like to have [bacon](food) pizza.
+    - [Bacon](food) pizza.
+    - [Peri Peri](food) 
+    - I want to order [Cheese](food) pizza
+    - [Cheese](food) pizza
+    - I like to have [Corn](food) pizza
+    - I want [Mexican](food) pizza
+    - [Mexican](food) pizza
+    - I love [Corn](food) pizza.
+    - We love [Mexican](food) pizza.
+    - [Paneer](food) pizza.
+    - [Cheese](food) 
+
+- intent: order_vegpizza
+  examples: |
+    - I want to order [Cheese](vegpizza) pizza
+    - [Cheese](vegpizza) pizza
+    - I like to have [Corn](vegpizza) pizza
+    - I want [Mexican](vegpizza) pizza
+    - [Mexican](vegpizza) pizza
+    - I love [Corn](vegpizza) pizza.
+    - We love [Mexican](vegpizza) pizza.
+    - [Paneer](vegpizza) pizza.
+    - [Cheese](vegpizza) 
+
+- intent: order_nvegpizza
+  examples: |
+    - I want to order [Chicken](nvegpizza) pizza
+    - [Peri Peri](nvegpizza) pizza
+    - We like to have [peri peri](nvegpizza) pizza
+    - I want [Chicken Pizza](nvegpizza) pizza
+    - [chicken](nvegpizza) pizza please.
+    - I love [bacon](nvegpizza) pizza.
+    - I love [bacon](nvegpizza) pizza.
+    - [Bacon](nvegpizza) pizza.
+    - [Peri Peri](nvegpizza) 
+
+- intent: order_side_menu
+  examples: |
+    - I want to order [Ginger Bread](side) 
+    - [Ginger Bread](side) 
+    - I like to have [Desserts](side) 
+    - I want [Dessert](side) 
+    - [Chocolate](side:Chocolate Drink) 
+    - I need [Desserts](side)
+    - I love [Dessrts](side:Desserts) 
+    - [Ginger](side:Ginger Bread) 
+    - [Chocolate Drink](side)
+     
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+
+- intent: deny
+  examples: |
+    - no
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+  
+
+- intent: pcrust
+  examples: |
+   - 1 [Burst](crust_type) 
+   - need [New Hand Tossed](crust_type)  
+   - [New Hand Tossed](crust_type)  
+   - want [Fresh Pan](crust_type)  
+   - [Fresh Pan](crust_type)  
+   - [Normal](crust_type) 
+   - i wnt [normal](crust_type)
+
+- intent: provide_name
+  examples: |
+    - My name is [Zafer](name)
+    - [Sarah](name)
+    - [Tom](name)
+    - [Harry](name)
+    - [Elizabeth](name) 
+    - [william shakespeare](name)
+    - [Sam](name)
+    - [Danial](name)
+    - [Robinson](name)
+    - [keira](name)
+    - [penelope](name)
+    - [leo](name)
+    - [matilda](name) 
+    - [samuel](name)
+    - [ram](name)
+    - [ram narayan prasad](name)
+    - [william Harry](name)
+    - [zayn malik](name)
+    - [gigi hadid](name)
+    - [rebecca](name)
+    - [hannah](name) 
+    - [Bucky](name)
+    - [Natalie](name)
+    - [Natalie Portman](name)
+    - [Megan Fox](name)
+    - [Raju](name)
+    - My name is [rajashri](name)
+    - [krishnamuthy](name)
+    - Hey there, I am [Molly](name)
+    - I am [John](name)
+
+
+- intent: psize
+  examples: |
+    - [regular](size) pizza.
+    - [large](size)
+    - i want [Large](size)
+    - i need [medium](size)
+    - [medium](size)
+  
+   
+- intent: ptopping
+  examples: |
+  
+    - [olives](topping)
+    - [pepperoni](topping)
+    - [onions](topping)
+    - [tomatoes](topping)
+    - [corn](topping)
+    - [none](topping)
+    - want extra [pepperoni](topping), [olives](topping).
+    - with extra [pepperoni](topping) and [olives](topping).
+    - yes, i want  extra [onions](topping) and [pepperoni](topping).
+    - i dont need.
+    - i dont like toppings.
+
+- intent: pquantity
+  examples: |
+    - [1](quantity)
+    - [2](quantity)
+    - i want [4](quantity) pizzas
+
+- intent: provide_number
+  examples: |
+    - my number is [8202829808](number)
+    - [8209829808](number)
+    - [8876817993](number)
+    - [7002680984](number)
+    - My phone no is [8209432908](number)
+    - [8876877993](number)
+    - [7001620984](number)
+    - [8203829808](number)
+    - [8875681799](number)
+    - [7002900984](number)
+    - [8209819808](number)
+    - [8876827993](number)
+    - [7002668884](number)
+    - [8209223082](number) is my number
+    - my mobile number is [7821111808](number)
+
+- intent: bot
+  examples: |
+    - Can I know your name?
+    - What is your name?
+    - Who are you?
+    - Can you tell me your name?
+    - Hey bot, what is your name?
+
+- intent: out_of_scope
+  examples: |
+    - what is 1+5?
+    - Prime Minister of India?
+    - Can you show me directions?
+
+- intent: ask_order
+  examples: |
+    - tell me the order id
+    - what's my order number?
+    - what is my order no?
+    - may i know what is my Order No?
+

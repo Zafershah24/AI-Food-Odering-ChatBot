@@ -1,0 +1,96 @@
+version: "2.0"
+
+stories:
+
+- story: take veg
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_veg_non_veg
+  - intent: vegetarian
+  - action: utter_veg
+  - action: form_info_pizza
+  - active_loop: form_info_pizza
+  - active_loop: null
+
+
+
+- story: take nveg
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_veg_non_veg
+  - intent: nonvegetarian
+  - action: utter_non_veg
+  - action: form_info_pizza
+  - active_loop: form_info_pizza
+  - active_loop: null
+
+
+- story: take side
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_veg_non_veg
+  - intent: side
+  - action: utter_side
+  - action: form_info_side
+  - active_loop: form_info_side
+  - active_loop: null
+
+- story: bot side
+  steps:
+  - intent: bot
+  - action: utter_iamabot
+  - action: utter_greet
+  - action: utter_veg_non_veg
+  - intent: side
+  - action: utter_side
+  - action: form_info_side
+  - active_loop: form_info_side
+  - active_loop: null
+
+
+
+- story: bot nveg
+  steps:
+  - intent: bot
+  - action: utter_iamabot
+  - action: utter_greet
+  - action: utter_veg_non_veg
+  - intent: nonvegetarian
+  - action: utter_non_veg
+  - action: form_info_pizza
+  - active_loop: form_info_pizza
+  - active_loop: null
+
+
+- story: bot veg
+  steps:
+  - intent: bot
+  - action: utter_iamabot
+  - action: utter_greet
+  - action: utter_veg_non_veg
+  - intent: vegetarian
+  - action: utter_veg
+  - action: form_info_pizza
+  - active_loop: form_info_pizza
+  - active_loop: null
+
+
+- story: ask order
+  steps:
+  - intent: ask_order
+  - action: action_order_id
+
+
+
+- story: out scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  - action: utter_veg_non_veg
+
+
+
+  
