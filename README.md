@@ -1,5 +1,8 @@
 # Yoyo-AI-pizzaBot
 
+# VIDEO DEMONSTRATION OF THE CHATBOT.
+![Video-Demonstration-of-the-Worki](https://user-images.githubusercontent.com/32811341/105641064-23055200-5ea8-11eb-8a54-a6d1d5235c1a.gif)
+
 # STEPS TO FOLLOW FOR RUNNING THE YOYO PIZZA CHATBOT.
 
 1) Download "AI" Folder in your Local Directory, then Open The COMMAND PROMPT(CMD).
